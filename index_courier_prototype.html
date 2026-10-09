@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>AGRES • Courier Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+:root{--blue:#0866e8;--pink:#f9cccc;--ink:#202124;--muted:#666;--line:#ececec;--green:#16a34a}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Roboto,Arial,sans-serif;color:var(--ink);background:#fff}body{max-width:520px;margin:0 auto;min-height:100dvh;padding-bottom:104px}.statusbar{height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;font-weight:700;font-size:17px;letter-spacing:.2px}.status-icons{display:flex;align-items:center;gap:7px;font-size:16px}.battery{background:#16b53b;color:#fff;padding:2px 6px;border-radius:3px;font-size:13px}.app-head{padding:34px 20px 0}.company{display:flex;align-items:center;gap:12px;color:var(--blue);font-size:20px;font-weight:800;letter-spacing:-.3px}.logo{width:37px;height:37px;border-radius:50%;display:grid;place-items:center;color:#e22b36;font-size:29px}.profile-row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:24px}.staff{min-width:0}.staff strong{font-size:17px;display:block;white-space:nowrap}.staff .role{font-size:16px;margin-top:5px;color:#333;white-space:nowrap}.right-info{text-align:right;flex-shrink:0}.right-info strong{display:block;font-size:15px;white-space:nowrap}.right-info span{display:block;font-size:14px;margin-top:5px;white-space:nowrap}.avatar{width:54px;height:54px;border-radius:50%;object-fit:cover;background:#e8f2ff;border:2px solid #d7eaff}.shortcut-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin:27px 14px 0}.shortcut{border:0;background:transparent;padding:0;display:flex;align-items:center;flex-direction:column;gap:11px;color:#343434;font:inherit;cursor:pointer;min-width:0}.shortcut .bubble{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;font-size:31px;transition:transform .15s}.shortcut:active .bubble{transform:scale(.95)}.shortcut span:last-child{font-size:13px}.bubble.pink{background:#fff0f7;color:#ed0784}.bubble.amber{background:#fff9ed;color:#cf7800}.bubble.blue{background:#eef3ff;color:#075be8}.bubble.green{background:#f2fbef;color:#65c92d}.bubble.teal{background:#e8f9f7;color:#089b8f}.main-content{padding:28px 20px 20px}.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.section-head h2{font-size:17px;margin:0}.subtle{font-size:12px;color:#777}.data-card{border:1px solid #e8e8e8;border-radius:15px;padding:16px;margin-bottom:12px;background:#fff;box-shadow:0 2px 9px #00000005}.data-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.label{font-size:10px;font-weight:800;color:#6a6a6a;letter-spacing:.8px}.data-card h3{font-size:15px;margin:5px 0 0}.mutasi{font-size:14px;font-weight:700;margin-top:7px;overflow-wrap:anywhere}.pill{display:inline-flex;border-radius:20px;padding:5px 9px;font-size:10px;font-weight:800;background:#eaf8ef;color:#16803c;white-space:nowrap}.product{border-top:1px solid var(--line);padding-top:12px;margin-top:13px}.product-name{font-size:12px;line-height:1.5;font-weight:700}.serial{font-size:13px;font-weight:700;color:#075bd7;margin-top:6px;letter-spacing:.3px}.scan-banner{display:flex;gap:12px;align-items:center;background:#f4f8ff;border:1px solid #dce9ff;border-radius:14px;padding:13px;margin-bottom:15px}.scan-banner i{font-size:25px;color:var(--blue)}.scan-banner strong{display:block;font-size:13px}.scan-banner small{display:block;color:#656565;margin-top:4px;font-size:11px;line-height:1.4}.scan-banner button{margin-left:auto;border:0;background:var(--blue);color:#fff;border-radius:10px;padding:10px 12px;font-weight:700;white-space:nowrap}.bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,520px);height:104px;background:var(--pink);display:grid;grid-template-columns:repeat(5,1fr);align-items:end;padding:8px 0 max(8px,env(safe-area-inset-bottom));z-index:5}.bottom-nav button{height:82px;border:0;background:transparent;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:7px;font:inherit;font-size:14px;cursor:pointer}.bottom-nav button i{font-size:27px}.bottom-nav button.active{background:#fff;border-radius:50px;margin:0 2px;height:80px;font-weight:700}.bottom-nav button.center{transform:translateY(-15px);height:102px}.bottom-nav button.center .nav-icon{height:82px;width:82px;border-radius:50%;background:var(--pink);display:grid;place-items:center;margin-bottom:-2px}.bottom-nav button.center i{font-size:52px}.bottom-nav button.center span{margin-top:-1px}.modal{position:fixed;inset:0;background:#0008;z-index:10;display:none;align-items:flex-end;justify-content:center}.modal.open{display:flex}.sheet{background:#fff;border-radius:22px 22px 0 0;width:min(100%,520px);max-height:94dvh;overflow:auto;padding:20px 18px max(22px,env(safe-area-inset-bottom));box-shadow:0 -10px 40px #0002}.sheet-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.sheet-head h2{font-size:19px;margin:0}.icon-btn{border:0;background:#f1f3f5;border-radius:50%;width:38px;height:38px;font-size:19px}.camera-frame{background:#101010;border-radius:16px;overflow:hidden;position:relative;min-height:230px;display:grid;place-items:center;color:white}.camera-frame video{width:100%;max-height:48dvh;object-fit:cover;display:block}.camera-frame canvas{display:none}.camera-overlay{position:absolute;inset:0;pointer-events:none;display:grid;place-items:center}.scan-target{width:72%;height:100px;border:2px solid #49e58d;border-radius:12px;box-shadow:0 0 0 999px #0003}.camera-placeholder{padding:25px;text-align:center}.camera-placeholder i{font-size:46px;display:block;margin-bottom:10px}.controls{display:flex;gap:9px;margin-top:13px}.btn{border:0;border-radius:11px;padding:13px 14px;font-weight:700;font-size:14px;cursor:pointer}.btn.primary{background:var(--blue);color:#fff}.btn.dark{background:#202124;color:#fff}.btn.light{background:#f0f2f5;color:#202124}.btn:disabled{opacity:.45;cursor:not-allowed}.controls .btn{flex:1}.field{margin-top:13px}.field label{font-size:11px;font-weight:800;color:#555;display:block;margin-bottom:6px}.field input{width:100%;padding:12px;border:1px solid #d9dce1;border-radius:10px;font:inherit;font-size:14px}.hint{font-size:11px;color:#777;line-height:1.45;margin-top:8px}.photo-preview{width:100%;max-height:280px;object-fit:contain;background:#f3f3f3;border-radius:12px;margin-top:12px;display:none}.notice{padding:10px 12px;border-radius:10px;background:#f1fbf4;color:#176b35;font-size:12px;line-height:1.45;margin-top:12px}.toast{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:20;background:#222;color:white;padding:12px 16px;border-radius:12px;font-size:13px;display:none;max-width:90%;box-shadow:0 4px 20px #0003}.toast.show{display:block}.empty{font-size:13px;color:#777;text-align:center;padding:25px 12px}.small-action{border:0;background:transparent;color:var(--blue);font-weight:700;font-size:12px}
+@media(min-width:520px){body{box-shadow:0 0 30px #0000000a}.bottom-nav{border-radius:18px 18px 0 0}}
+</style>
+</head>
+<body>
+<div class="statusbar"><span>00.59</span><div class="status-icons"><i class="bi bi-wifi"></i><i class="bi bi-whatsapp"></i><i class="bi bi-facebook"></i><i class="bi bi-bell-slash-fill"></i><i class="bi bi-geo-alt-fill"></i><span style="font-size:12px">4G ▮▮</span><span class="battery">57</span><i class="bi bi-lightning-charge-fill"></i></div></div>
+<header class="app-head">
+  <div class="company"><span class="logo"><i class="bi bi-arrow-repeat"></i></span><span>PT AGRES INFO TEKNOLOGI</span></div>
+  <div class="profile-row">
+    <div class="staff"><strong>E0541 / MUHAMMAD I H <span style="color:#ffca05">★</span> 8.824</strong><div class="role">4A TEAM LEADER / OPERATION GENERAL</div></div>
+    <div class="right-info"><img class="avatar" alt="Profil staff" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop&crop=faces"><strong>SATURDAY, 10 OCT 2026</strong><span>00:59 WIB (08:30 - 18:30)</span></div>
+  </div>
+</header>
+<nav class="shortcut-grid" aria-label="Menu utama">
+  <button class="shortcut" onclick="showToast('Prototype Stock Card')"><span class="bubble pink"><i class="bi bi-box"></i></span><span>STOCK CARD</span></button>
+  <button class="shortcut" onclick="showToast('Prototype OTO')"><span class="bubble amber"><i class="bi bi-shield-check"></i></span><span>OTO</span></button>
+  <button class="shortcut" onclick="showToast('Prototype Sales')"><span class="bubble blue"><i class="bi bi-file-earmark-spreadsheet"></i></span><span>SALES</span></button>
+  <button class="shortcut" onclick="showToast('Prototype Event')"><span class="bubble green"><i class="bi bi-calendar-event"></i></span><span>EVENT</span></button>
+  <button class="shortcut" onclick="openCourier()"><span class="bubble teal"><i class="bi bi-upc-scan"></i></span><span>COURIER</span></button>
+</nav>
+<main class="main-content">
+  <div class="scan-banner"><i class="bi bi-camera"></i><div><strong>COURIER DOCUMENTATION</strong><small>Scan barcode/QR, tampilkan data prototype, lalu ambil foto dokumentasi. Tidak ada data yang disimpan.</small></div><button onclick="openCourier()">BUKA</button></div>
+  <div class="section-head"><h2>DATA HASIL SCAN</h2><span class="subtle" id="scanState">PROTOTYPE</span></div>
+  <div id="resultData">
+    <article class="data-card">
+      <div class="data-top"><div><div class="label">SUPPLIER</div><h3>PT ECS INDO JAYA</h3><div class="mutasi">RB-JKT-JKT19B-PS26100023</div></div><span class="pill">DATA DEMO</span></div>
+      <div class="product"><div class="label">BARANG 01</div><div class="product-name">ASUS ZENBOOK 14 OLED TOUCH UX3405CA ULTRA 5 225H 16GB 1TB W11+OHS 14.0 2K EVO BLU 3Y -OLED5111TM</div><div class="serial">T5N0CX04S40121F</div></div>
+      <div class="product"><div class="label">BARANG 02</div><div class="product-name">ASUS VIVOBOOK 14 A1405VA I5 13420H 16GB 512GB W11+OHS+M365B 14.0WUXGA VIPS BLK -VIPS5151M</div><div class="serial">T3N0CV12Y00513A</div></div>
+    </article>
+  </div>
+  <div class="section-head" style="margin-top:22px"><h2>FOTO DOKUMENTASI</h2><button class="small-action" onclick="openCourier()">+ AMBIL FOTO</button></div>
+  <div id="photoArea" class="data-card"><div class="empty"><i class="bi bi-image" style="font-size:28px;display:block;margin-bottom:7px"></i>Belum ada foto dokumentasi pada sesi ini.</div></div>
+</main>
+<nav class="bottom-nav" aria-label="Navigasi bawah">
+  <button class="active" onclick="setBottom(this,'SALES')"><i class="bi bi-cart-fill"></i><span>SALES</span></button>
+  <button onclick="setBottom(this,'OPERATION')"><i class="bi bi-gear"></i><span>OPERATION</span></button>
+  <button class="center" onclick="setBottom(this,'HR')"><span class="nav-icon"><i class="bi bi-person-circle"></i></span><span>HR</span></button>
+  <button onclick="setBottom(this,'FINANCE')"><i class="bi bi-currency-dollar"></i><span>FINANCE</span></button>
+  <button onclick="setBottom(this,'SERVICE')"><i class="bi bi-wrench-adjustable"></i><span>SERVICE</span></button>
+</nav>
+<div class="modal" id="courierModal" role="dialog" aria-modal="true" aria-labelledby="courierTitle">
+  <div class="sheet">
+    <div class="sheet-head"><div><div class="label">PT AGRES INFO TEKNOLOGI</div><h2 id="courierTitle">COURIER SCAN & FOTO</h2></div><button class="icon-btn" onclick="closeCourier()" aria-label="Tutup"><i class="bi bi-x-lg"></i></button></div>
+    <div class="camera-frame" id="cameraFrame">
+      <video id="cameraVideo" autoplay playsinline muted></video><canvas id="scanCanvas"></canvas>
+      <div class="camera-overlay" id="cameraOverlay"><div class="scan-target"></div></div>
+      <div class="camera-placeholder" id="cameraPlaceholder"><i class="bi bi-camera-video"></i><strong>Kamera belum aktif</strong><p class="hint" style="color:#ddd">Tekan “Aktifkan Kamera”. Gunakan HTTPS atau localhost agar kamera dapat diakses.</p></div>
+    </div>
+    <div class="controls"><button class="btn primary" id="startCameraBtn" onclick="startCamera()"><i class="bi bi-camera-video"></i> AKTIFKAN KAMERA</button><button class="btn light" onclick="switchMode()" id="modeBtn">MODE FOTO</button></div>
+    <div class="field"><label for="manualScan">INPUT HASIL SCAN (OPSIONAL / DEMO)</label><input id="manualScan" placeholder="Scan barcode atau masukkan serial number..." autocomplete="off"></div>
+    <div class="controls"><button class="btn dark" onclick="processScan()"><i class="bi bi-upc-scan"></i> PROSES SCAN</button><button class="btn light" onclick="capturePhoto()"><i class="bi bi-camera-fill"></i> AMBIL FOTO</button></div>
+    <img id="photoPreview" class="photo-preview" alt="Pratinjau dokumentasi">
+    <div class="hint">Prototype ini tidak mengirim atau menyimpan data ke server. Scan apa pun akan memicu tampilan data demo yang ditetapkan di bawah; nilai hasil scan hanya ditampilkan sebagai catatan sesi.</div>
+    <div id="courierNotice" class="notice">Siap digunakan. Hasil dan foto hanya berada di halaman selama sesi aktif.</div>
+    <div class="controls"><button class="btn light" onclick="clearSession()">BERSIHKAN SESI</button><button class="btn primary" onclick="closeCourier()">SELESAI</button></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const DEMO = {
+  supplier: 'PT ECS INDO JAYA',
+  mutasi: 'RB-JKT-JKT19B-PS26100023',
+  items: [
+    {name:'ASUS ZENBOOK 14 OLED TOUCH UX3405CA ULTRA 5 225H 16GB 1TB W11+OHS 14.0 2K EVO BLU 3Y -OLED5111TM', serial:'T5N0CX04S40121F'},
+    {name:'ASUS VIVOBOOK 14 A1405VA I5 13420H 16GB 512GB W11+OHS+M365B 14.0WUXGA VIPS BLK -VIPS5151M', serial:'T3N0CV12Y00513A'}
+  ]
+};
+let stream = null, scanning = false, scanTimer = null, photoUrl = null, lastScan = '';
+let detector = null;
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400)}
+function setBottom(el,label){document.querySelectorAll('.bottom-nav button').forEach(b=>b.classList.remove('active'));el.classList.add('active');if(label!=='SALES')showToast('Navigasi '+label+' — prototype')}
+function openCourier(){document.getElementById('courierModal').classList.add('open');document.body.style.overflow='hidden'}
+function closeCourier(){document.getElementById('courierModal').classList.remove('open');document.body.style.overflow='';stopCamera()}
+function switchMode(){const b=document.getElementById('modeBtn');const photo=b.dataset.mode!=='photo';b.dataset.mode=photo?'photo':'scan';b.innerHTML=photo?'<i class="bi bi-upc-scan"></i> MODE SCAN':'<i class="bi bi-camera"></i> MODE FOTO';document.getElementById('courierTitle').textContent=photo?'COURIER FOTO DOKUMENTASI':'COURIER SCAN & FOTO';showToast(photo?'Mode foto dokumentasi':'Mode scan barcode')}
+async function startCamera(){
+  if(!navigator.mediaDevices?.getUserMedia){showToast('Browser tidak mendukung akses kamera');return}
+  try{
+    stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'}},audio:false});
+    const video=document.getElementById('cameraVideo');video.srcObject=stream;await video.play();
+    document.getElementById('cameraPlaceholder').style.display='none';document.getElementById('cameraOverlay').style.display='grid';
+    document.getElementById('startCameraBtn').innerHTML='<i class="bi bi-camera-video-off"></i> MATIKAN KAMERA';
+    document.getElementById('startCameraBtn').onclick=stopCamera;
+    if('BarcodeDetector' in window){try{detector=new BarcodeDetector({formats:['qr_code','code_128','code_39','ean_13','ean_8','upc_a','upc_e','itf','codabar','data_matrix','pdf417']});startDetectLoop()}catch(e){detector=null}}
+    document.getElementById('courierNotice').textContent=detector?'Kamera aktif. Arahkan barcode/QR ke kotak hijau.':'Kamera aktif. Scan otomatis belum didukung browser ini; gunakan input hasil scan.';
+  }catch(e){showToast('Kamera gagal dibuka. Periksa izin kamera dan gunakan HTTPS.');document.getElementById('courierNotice').textContent='Kamera tidak dapat diakses: '+(e.message||e)}
+}
+function stopCamera(){if(scanTimer){clearTimeout(scanTimer);scanTimer=null}if(stream){stream.getTracks().forEach(t=>t.stop());stream=null}const v=document.getElementById('cameraVideo');if(v)v.srcObject=null;const p=document.getElementById('cameraPlaceholder');if(p)p.style.display='grid';const o=document.getElementById('cameraOverlay');if(o)o.style.display='none';const b=document.getElementById('startCameraBtn');if(b){b.innerHTML='<i class="bi bi-camera-video"></i> AKTIFKAN KAMERA';b.onclick=startCamera}scanning=false}
+async function startDetectLoop(){if(!detector||!stream)return;scanning=true;const v=document.getElementById('cameraVideo');try{if(v.readyState>=2){const codes=await detector.detect(v);if(codes.length&&codes[0].rawValue){document.getElementById('manualScan').value=codes[0].rawValue;processScan(codes[0].rawValue);return}}}catch(e){}if(scanning)scanTimer=setTimeout(startDetectLoop,350)}
+function processScan(value){const v=(value??document.getElementById('manualScan').value).trim();if(!v){showToast('Scan barcode atau isi hasil scan terlebih dahulu');return}lastScan=v;document.getElementById('scanState').textContent='SCAN TERDETEKSI';renderDemo();document.getElementById('courierNotice').textContent='Scan diterima: '+v+' — data demo PT ECS INDO JAYA ditampilkan. Tidak disimpan.';showToast('Scan berhasil diproses');}
+function renderDemo(){const html=`<article class="data-card"><div class="data-top"><div><div class="label">SUPPLIER</div><h3>${DEMO.supplier}</h3><div class="mutasi">${DEMO.mutasi}</div></div><span class="pill">HASIL PROTOTYPE</span></div><div class="product"><div class="label">BARANG 01</div><div class="product-name">${DEMO.items[0].name}</div><div class="serial">${DEMO.items[0].serial}</div></div><div class="product"><div class="label">BARANG 02</div><div class="product-name">${DEMO.items[1].name}</div><div class="serial">${DEMO.items[1].serial}</div></div><div class="product"><div class="label">NILAI HASIL SCAN</div><div class="serial" style="overflow-wrap:anywhere">${escapeHtml(lastScan)}</div></div></article>`;document.getElementById('resultData').innerHTML=html}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function capturePhoto(){const video=document.getElementById('cameraVideo');if(!stream||video.readyState<2){showToast('Aktifkan kamera terlebih dahulu');return}const canvas=document.createElement('canvas');canvas.width=video.videoWidth;canvas.height=video.videoHeight;canvas.getContext('2d').drawImage(video,0,0,canvas.width,canvas.height);if(photoUrl)URL.revokeObjectURL(photoUrl);canvas.toBlob(blob=>{if(!blob){showToast('Foto gagal diambil');return}photoUrl=URL.createObjectURL(blob);showPhoto(photoUrl)},'image/jpeg',.88)}
+function showPhoto(url){const img=document.getElementById('photoPreview');img.src=url;img.style.display='block';document.getElementById('photoArea').innerHTML='<div class="label">FOTO TERBARU • HANYA DI SESI INI</div><img alt="Foto dokumentasi sesi" src="'+url+'" style="width:100%;display:block;border-radius:10px;margin-top:10px"><div class="hint">Foto tidak diunggah atau disimpan. Foto akan hilang saat halaman ditutup atau sesi dibersihkan.</div>';document.getElementById('courierNotice').textContent='Foto berhasil diambil dan hanya ditampilkan sementara.';showToast('Foto dokumentasi diambil')}
+function clearSession(){lastScan='';document.getElementById('manualScan').value='';document.getElementById('scanState').textContent='PROTOTYPE';document.getElementById('resultData').innerHTML='<div class="data-card"><div class="empty">Sesi dibersihkan. Data demo akan muncul kembali setelah scan berikutnya.</div></div>';document.getElementById('photoArea').innerHTML='<div class="empty"><i class="bi bi-image" style="font-size:28px;display:block;margin-bottom:7px"></i>Belum ada foto dokumentasi pada sesi ini.</div>';document.getElementById('photoPreview').style.display='none';if(photoUrl){URL.revokeObjectURL(photoUrl);photoUrl=null}document.getElementById('courierNotice').textContent='Sesi dibersihkan. Tidak ada data yang disimpan.';showToast('Sesi dibersihkan')}
+document.getElementById('courierModal').addEventListener('click',e=>{if(e.target.id==='courierModal')closeCourier()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCourier()});
+</script>
+</body>
+</html>
